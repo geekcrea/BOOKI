@@ -751,7 +751,11 @@ footer{
     }
 
     .section-recherche {
+<<<<<<< HEAD
         padding: 20px 25px;
+=======
+        padding: 20px 35px;
+>>>>>>> 743ad030d837f526cc3767422dadb7a452dcc072
     }
 
     .btn-form-mobile {
@@ -829,7 +833,11 @@ footer{
         align-items: center; 
         width: 100%; 
         gap: 0;
+<<<<<<< HEAD
         height: 420px;
+=======
+        height: 450px;
+>>>>>>> 743ad030d837f526cc3767422dadb7a452dcc072
     }
 
     .carte-populaire {
