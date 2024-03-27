@@ -840,8 +840,8 @@ footer{
 
     .conteneur-populaire-titre {
         display: flex;
-        justify-content: flex-start;
-        gap: 100px;
+        justify-content: space-between;
+        width: 100%;
         margin-bottom: 6px;
         margin-top: 6px;
     }
