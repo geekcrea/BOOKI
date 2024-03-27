@@ -751,7 +751,7 @@ footer{
     }
 
     .section-recherche {
-        padding: 20px 35px;
+        padding: 20px 25px;
     }
 
     .btn-form-mobile {
@@ -829,7 +829,7 @@ footer{
         align-items: center; 
         width: 100%; 
         gap: 0;
-        height: 450px;
+        height: 420px;
     }
 
     .carte-populaire {
