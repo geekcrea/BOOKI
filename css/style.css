@@ -834,13 +834,14 @@ footer{
 
     .carte-populaire {
         width: 90%; 
-        margin: 15px 0; 
+        margin: 13px 0; 
         gap: 15px;
     }
 
     .conteneur-populaire-titre {
-        justify-content: center;
-        gap: 170px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 100px;
         margin-bottom: 6px;
         margin-top: 6px;
     }
