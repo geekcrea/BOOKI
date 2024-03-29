@@ -694,46 +694,51 @@ footer{
    }
 
  
-    .liste-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: stretch;
-        width: 100%;
-        padding-right: 150px;
-        
-    }
-
-    .item-nav {
-        position: relative;
-        flex-grow: 1; 
-    }
-
-    .item-nav a {
-        padding-top: 10px;
-        justify-content: center;
-        width : 100%;
-    }
-
-    .item-nav a::after {
-        content: '';
-        position: absolute;
-        bottom: 3em; 
-        width: 190%; 
-        height: 3px;
-        background-color: var(--principale); 
-        opacity: 0; 
-        transition: opacity 0.4s ease;
-       
-    }
-
-    .item-nav a:hover::after, .item-nav a:focus::after {
-        opacity: 1; 
-    }
-    .item-nav a::before {
-        content: none; 
-    }
+   
+   .liste-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding-right: 150px;
+    border-bottom: 2px solid #ccc ;
+    height: 50px;
+    margin-top: 15px;
     
+}
+
+.item-nav {
+    position: relative;
+    flex-grow: 1; 
+}
+
+.item-nav a {
+    padding-top: 10px;
+    justify-content: center;
+    width : 100%;
+}
+
+.item-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 2em; 
+    width: 190%; 
+    height: 3px;
+    background-color: var(--principale); 
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+   
+}
+
+.item-nav a:hover::after, .item-nav a:focus::after {
+    opacity: 1; 
+}
+.item-nav a::before {
+    content: none; 
+}
+
+
     
     .header-presentation p {
         font-size: 17px; 
