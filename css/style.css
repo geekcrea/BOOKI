@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
@@ -19,7 +19,8 @@ html{
 
 body{
     max-width: 1440px;
-   overflow-x: hidden;
+    overflow-x: hidden;
+    margin: auto;
 }
 
 h1, h2{
@@ -31,8 +32,9 @@ h3 {
 }
 .centrer-flex{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    gap: 68px;
 }
 
 img{
@@ -57,9 +59,7 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
-    padding: 0 60px 0 40px; 
-    
+    padding: 0 60px 0 40px;
 }
 
 .header-logo img{
@@ -73,29 +73,22 @@ li{
 /* Nav */
 
 .header-nav{
-    height: 100%;
+    width: 100%;
+
 }
 
-.liste-nav{
-    height: 100%;
-}
+
 
 .item-nav{
     position:relative;
-    height: 100%;
-    margin-left: 100px;
+    height: 71px;
     padding-top: 10px;
-    padding-bottom: 70px;  
    }
 
 .item-nav a{
     margin-right: 0px;
-    padding-left: 20px;
-    padding-right: 0px;
-    font-size:  16px;
+    font-size: 16px;
     transition:  color 0.4s ease-in-out;
-   
-
 }
 
 
@@ -114,7 +107,7 @@ li{
 }
 
 .item-nav a:hover::before{
-    width: 130%;
+    width: 100%;
     
 }
 
@@ -155,12 +148,13 @@ form{
    
 }
     
-    .conteneur-formulaire label{
+.conteneur-formulaire label{
     width: 60px;
     font-size: 22px;
     border-radius: 20px 0 0 20px;
     cursor:url(../images/logo/cursor.svg) 0 0, auto;
     background-color: #F2F2F2;
+    justify-content: center;
 }
 
 .conteneur-formulaire input[type='search']{
@@ -206,7 +200,7 @@ form{
 }
 
 /* Filtre */
-.conteneur-filtre {
+    .conteneur-filtre {
     margin-top: 35px;
     margin-bottom: 35px;
     display: flex; 
@@ -214,10 +208,8 @@ form{
     gap: 10px; 
   }
    
-  
-  
-  /* Style pour chaque boîte de filtre */
-  .box-filtre span {
+
+   .box-filtre span {
     font-weight: bold; 
    
   }
@@ -236,17 +228,12 @@ form{
     transition: background-color 0.3s; 
   }
   
-  /* Style pour les logos dans chaque filtre */
-  .filtre-logo {
+   .filtre-logo {
     width: 24px; 
     height: 24px; 
-    
   }
   
   
-
-  
-  /* Changement de couleur de fond au survol */
   .box-filtre:hover {
     background-color: var(--Blue-Light, #DEEBFF); 
     color: white; 
@@ -297,7 +284,6 @@ main{
     justify-content: space-between;
 }
 
-
 .conteneur-hebergement{
     width: 67%; 
     padding: 30px;
@@ -306,8 +292,6 @@ main{
     margin-left: 35px;
     margin-right: 25px;
 }
-
-
 
 .box-carte-hebergement{
     width: 100%;
@@ -610,8 +594,7 @@ footer{
         align-items: center;
         flex-wrap: wrap;
         height: 300px;
-        width: 95%;
-        
+        width: 95%; 
         margin:  20px 0 40px;
     }
 
@@ -681,6 +664,7 @@ footer{
     .header-accueil {
         flex-direction: column;
         padding: 0;
+        margin-bottom: 20px;
     }
 
     .header-logo img {
@@ -689,28 +673,19 @@ footer{
     }
 
    .header-presentation h1 {
-   
     font-size: 20px;
    }
 
  
    
    .liste-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    width: 100%;
-    padding-right: 150px;
-    border-bottom: 2px solid #ccc ;
-    height: 50px;
+    gap: 0;
     margin-top: 15px;
-    
 }
 
-.item-nav {
-    position: relative;
-    flex-grow: 1; 
+   .item-nav {
+    flex-grow: 1;
+    width: 100%;
 }
 
 .item-nav a {
@@ -720,7 +695,6 @@ footer{
 }
 
 .item-nav a::after {
-    content: '';
     position: absolute;
     bottom: 2em; 
     width: 190%; 
@@ -728,17 +702,19 @@ footer{
     background-color: var(--principale); 
     opacity: 0; 
     transition: opacity 0.4s ease;
-   
 }
 
-.item-nav a:hover::after, .item-nav a:focus::after {
-    opacity: 1; 
+    .item-nav {
+    border-bottom: 2px solid #ccc ;
 }
-.item-nav a::before {
+    
+    .item-nav:hover {
+    border-bottom: 2px solid blue ;
+}
+    
+    .item-nav a::before {
     content: none; 
 }
-
-
     
     .header-presentation p {
         font-size: 17px; 
@@ -754,9 +730,6 @@ footer{
         border: 2px solid #F2F2F2;
     }
 
-    .section-recherche {
-        padding: 20px 25px;
-    }
 
     .btn-form-mobile {
         display: inline-block;
@@ -790,6 +763,7 @@ footer{
     .conteneur-filtre .box-filtre {
         width: calc(50% - 10px); 
         margin-bottom: 20px; 
+        min-width: 140px;
     }
 
     .conteneur-info {
@@ -800,7 +774,7 @@ footer{
         margin-bottom: 5px;
     }
    
-    /* Hébergements et Populaires */
+    /* Hebergements et Populaires */
       
     main{
         padding: 0;
@@ -896,17 +870,15 @@ footer{
     }
    
    
-
     .conteneur-hebergement h2 {
         background-color: white; 
-        width: auto; 
-       
-        
+        width: auto;  
     }
 
     .conteneur-hebergement h3 {
         background-color: white; 
     }
+
     .charge {
         padding-bottom: 0px;
         padding-top: 20px;
@@ -914,6 +886,7 @@ footer{
         font-size: 16px;
         margin-left: 10px;
     }
+    
     /*activités*/
 
     .conteneur-carte-activite{
@@ -941,10 +914,7 @@ footer{
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.379);
     }
 
-    
-
-   
-    
+ 
     figcaption{
         position: absolute;
         bottom: 0;
