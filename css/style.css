@@ -260,7 +260,8 @@ form{
     height: 24px; 
     margin-right: 10px; 
     border: 1px solid #dddddd;
-    color: #0065FC; 
+    color: #0065FC;
+    padding-right: 7px;
    
 }
 
