@@ -5,7 +5,7 @@
             <meta name="description" content="Site de planification de vacances">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Booki</title>    
-            <link rel="shortcut icon" href="../BOOKI/images/logo/favicon.webp" type="image/x-icon">        
+            <link rel="shortcut icon" href="./images/logo/favicon.webp" type="image/x-icon">        
             <link rel="stylesheet" href="css/style.css">
             <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" >
@@ -72,24 +72,24 @@
                 
                 
                     <div tabindex="0" class="box-filtre">
-                      <img src="./images/logo/economique.svg" alt="Économique" class="filtre-logo">
+                        <i class="fa-solid fa-money-bill-wave fa-2x" style="color: #0065fc;"></i>
                       <span>Économique</span>
                     </div>
                   
                     
                         <div tabindex="0" class="box-filtre">
-                          <img src="./images/logo/familial.svg" alt="Familial" class="filtre-logo">
+                            <i class="fa-solid fa-person fa-2x" style="color:#0065fc;"></i>
                           <span>Familial</span>
                         </div>
                       
                     
                         <div tabindex="0" class="box-filtre">
-                        <img src="./images/logo/romantique.svg" alt="Romantique" class="filtre-logo">
+                            <i class="fa-solid fa-heart fa-2x" style="color:#0065fc;"></i>
                         <span>Romantique</span>
                     </div>
         
                     <div tabindex="0" class="box-filtre">
-                        <img src="./images/logo/nos-pepites.svg" alt="Nos pépites" class="filtre-logo">
+                        <i class="fa-solid fa-fire fa-2x" style="color:#0065fc;"></i>
                         <span>Nos pépites</span>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                 <!-- Infos -->
 
                 <div class="conteneur-info">
-                    <figure class="logo-info centrer-flex"></figure>
+                    <i class="fa-solid fa-info icon-circle" aria-hidden="true" style="color: #0065fc;"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
@@ -125,7 +125,14 @@
                                 <div class="hebergement-info">
                                     <h3>Hôtel du port</h3>
                                     <p>Nuit à partir de <span>52€</span></p>
-                                    <figure class="conteneur-etoile-4"></figure>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" style="color: #F2F2F2"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>  
                             </a>  
                             
@@ -136,8 +143,15 @@
                                 <div class="hebergement-info">
                                     <h3>Hôtel chez Amina</h3>
                                     <p>Nuit à partir de <span>96€</span></p>
-                                    <figure class="conteneur-etoile-4"></figure>
-                                </div>  
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" style="color: #F2F2F2"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>   
                             </a>
 
                             <a href="#" class="carte-hebergement">
@@ -147,8 +161,15 @@
                                 <div class="hebergement-info">
                                     <h3>Hôtel Les mouettes</h3>
                                     <p>Nuit à partir de <span>76€</span></p>
-                                    <figure class="conteneur-etoile-4"></figure>
-                                </div>  
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" style="color: #F2F2F2"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>   
                             </a>  
 
                             <a href="#" class="carte-hebergement">
@@ -158,7 +179,14 @@
                                 <div class="hebergement-info">
                                     <h3>Hôtel de la mer</h3>
                                     <p>Nuit à partir de <span>46€</span></p>
-                                    <figure class="conteneur-etoile-4"></figure>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" style="color: #F2F2F2"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>  
                             </a> 
 
@@ -170,7 +198,14 @@
                                 <div class="hebergement-info">    
                                      <h3>Auberge La Cannebière</h3>
                                     <p>Nuit à partir de <span>25€</span></p>
-                                    <figure class="conteneur-etoile-4"></figure>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" style="color: #F2F2F2"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div> 
                             </a> 
 
@@ -181,8 +216,15 @@
                                 <div class="hebergement-info">
                                     <h3>Auberge Le Panier</h3>
                                     <p>Nuit à partir de <span>23€</span></p>
-                                    <figure class="conteneur-etoile-4"></figure>
-                                </div>  
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" style="color: #F2F2F2"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div> 
                             </a> 
 
                             
@@ -211,8 +253,15 @@
                                         <h3>Hôtel Le soleil du matin</h3>
                                         <p>Nuit à partir de <span>128€</span></p>
                                     </div>
-                                    <figure class="conteneur-etoile-4"></figure>
-                                </div>  
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" style="color: #F2F2F2"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div> 
                             </a>
 
                             <a href="#" class="carte-populaire">
@@ -224,7 +273,14 @@
                                         <h3>Chambres d'hôtes Au coeur de l'eau</h3>
                                         <p>Nuit à partir de <span>71€</span></p>
                                     </div>
-                                    <figure class="conteneur-etoile-4"></figure>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" style="color: #F2F2F2"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>  
                             </a>
 
@@ -237,7 +293,14 @@
                                         <h3>Hôtel Bleu et Blanc</h3>
                                         <p>Nuit à partir de <span>68€</span></p>
                                     </div>
-                                    <figure class="conteneur-etoile-4"></figure>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true" style="color: #0065fc;"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" style="color: #F2F2F2"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>  
                             </a>
                         </div>
