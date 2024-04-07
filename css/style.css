@@ -212,10 +212,12 @@ form{
    .box-filtre span {
     font-weight: bold;
     font-size: 17px;
+    color: black;
       
   }
 
   .box-filtre {
+    color: #0065fc;
     margin-top: -10px;
     display: flex;
     align-items: center; 
@@ -258,6 +260,7 @@ form{
  .conteneur-info i{
     display: flex;
     align-items:center ;
+    color: #0065FC;
  }
 
 .icon-circle {
@@ -300,6 +303,14 @@ main{
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.neutral-star {
+   color: #F2F2F2;
 }
 
 .carte-hebergement{
